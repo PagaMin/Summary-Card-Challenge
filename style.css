@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --brigth-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-image: linear-gradient(to bottom, hsl(245, 75%, 52%), hsl(225, 100%, 94%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    width: 28.125rem;
+    height: 43.75rem;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 1.25rem;
+}
+
+.hero {
+    border-radius: 1.25rem 1.25rem 0px 0px;
+}
+
+.title {
+    color: var(--dark-blue);
+    margin-top: 2rem;
+    font-size: 2.2rem;
+}
+
+.description {
+    margin-top: 2rem;
+    color: var(--desaturated-blue);
+    width: 18.75rem;
+    margin: 2rem auto 0px auto;
+}
+
+button {
+    border-radius: 0.625rem;
+    width: 22.25rem;
+    height: 3.125rem;
+    border: none;
+    background-color: var(--brigth-blue);
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0px 4px 10px 0px rgba(76, 184, 217, 1);
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 70%;
+}
+
+.cancel {
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.cancel:hover {
+    color: var(--dark-blue);
+}
+
+.price-plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.875rem;
+    width: 22.188rem;
+    height: 6rem;
+    margin: 1.625rem auto 2rem auto;
+    background-color: var(--very-pale-blue);
+}
+
+.choice {
+    margin-left: -3.125rem;
+}
+
+.choice-plan {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.price {
+    color: var(--desaturated-blue);
+}
+
+a {
+    font-weight: 900;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 60%;
+}
+
+@media (max-width: 450px) {
+    .container {
+        width: 20.625rem;
+        height: 35.625rem;
+    }
+
+    .hero {
+        width: 20.625rem;
+        height: 10.188rem;
+    }
+
+    .price-plan {
+        width: 17.438rem;
+        height: 5rem;
+    }
+
+    .choice {
+        margin-left: -1.5rem;
+    }
+
+    button {
+        width: 17.438rem;
+        height: 3.125rem;
+    }
+
+    .title {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .description {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+}
